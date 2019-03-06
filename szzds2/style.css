@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*所有头适用*/
+header {
+    height: 1.28rem;
+    display: block;
+    line-height: 1.28rem;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    color: rgb(73, 86, 156);
+}
+/* header span{
+    position: absolute;
+    color:rgb(193, 193, 193);
+    right: .666667rem;
+} */
+header img {
+    position: absolute;
+    margin: auto .666667rem;
+    height: .533333rem;
+    top: 0;
+    bottom: 0;
+}
+header #home{
+    margin-right:0;
+    right:1.866667rem;
+}
+header #arrow {
+    left: 0;
+}
+
+header #bell {
+    right: 0;
+}
+
+/*首页*/
+
+.nav_list {
+    height: 1.6rem;
+}
+
+.nav_list ul {
+    white-space:nowrap;
+    height: 100%;
+}
+
+.nav_item {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+}
+.forum{
+    padding: .533333rem 0;
+    width: 100%;
+}
+.know{
+    padding: .533333rem 0;
+    width: 100%;
+}
+.nav_item img {
+    height: .533333rem;
+    display: inline-block;
+}
+
+.nav_item span {
+    padding-left: .346667rem;
+    display: inline-block;
+}
+.user {
+    height: 5.066667rem;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+.user ul{
+    display: flex;
+}
+
+.user_pho {
+    height: 5.066667rem;
+    position: relative;
+}
+
+.user img {
+    height: 3.28rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto ;
+}
+.user_info{
+    width: 5rem;
+    height: 5.066667rem;
+    /* position: relative; */
+    display: flex;
+    
+    flex-direction:column;
+}
+.user_name{
+    
+    /* position: absolute; */
+    width: 5rem;
+    height: .533333rem;
+    font-size: 16px;
+    margin: 1.093333rem 0 0 .32rem;
+    
+}
+.user_sign{
+    margin: .293333rem .8rem 0 .32rem;
+    font-size: 14px;
+    color: rgb(125,125,125);
+}
+.ProfileBar{
+    height: 2.16rem;
+    width: 100%;
+    border-bottom: .053333rem solid #f6f6f6;
+    white-space:nowrap;
+}
+.tabs_item{
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.tabs_item_active::after {
+    position: absolute;
+    bottom: -0.0533rem;
+    height: .16rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: rgb(73,86,156);
+    content: '';
+    width: 2.133333rem;
+}
+.tabs_item_active {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    color:rgb(73,86,156);
+}
+.item_number_active{
+    color:rgb(73,86,156);
+    font-size: .533333rem;
+}
+.item_name_active{
+    color:rgb(73,86,156);
+    font-size: 16px;    /*是否要固定px*/
+}
+.item_myTheme{
+    padding-top: .4rem;
+}
+.item_myProblem{
+    padding-top: .4rem;
+}
+.item_number{
+    font-size: .533333rem;
+}
+.item_name{
+    color: rgb(144,144,144);
+    font-size: 16px;   /*是否要固定px*/
+}
+
+/*我的问题和我的回答面板*/
+.Profile_data{
+    display:flex; 
+}
+
+.list_item{
+    flex:1;
+    padding: 0.4rem .32rem;
+    position: relative;
+}
+.list_item::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 0.32rem;
+    display: block;
+    border-bottom: .026667rem solid rgb(244,244,248);;
+    content: '';
+}
+
+.list_item > span{
+    position: absolute;
+    right: .32rem;
+    top: .48rem;
+}
+.ContentItem_title{
+    font-size: 16px;
+    font-weight: bolder;
+    width: 85%;
+}
+.content{
+    margin-top: .426667rem;
+    position: relative;
+}
+.content_text{ /* 使用了WebKit的CSS扩展属性*/
+    font-size: 14px;
+    height: 40px;
+    display: -webkit-box;           /*将对象作为弹性伸缩盒子模型显示*/
+    -webkit-box-orient: vertical; /*设置或检索伸缩盒对象的子元素的排列方式*/
+    -webkit-line-clamp:2;           /*行数*/
+    overflow: hidden;   
+    
+    /*text-overflow: ellipsis; */
+}
+.content_img img{
+    width: 100%;
+    height: 100%;
+}
+.content_actions{
+    padding: .72rem 0;
+    float: right;
+}
+.content_actions img{
+    height: .48rem;
+    display: inline-block;
+    padding-right: .16rem;
+}
+.content_actions > span{
+    display: inline-block;
+}
+
+/* notifications.html*/
+
+.not_list{
+    display:flex; 
+    flex-direction: column;
+    color: rgb(174,174,174);
+}
+.not_item{
+    flex:1;
+    padding: 0.3467rem 0.32rem;
+    position: relative;
+}
+.not_item::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 .32rem;
+    display: block;
+    border-bottom: .026667rem solid rgb(244,244,248);
+    content: '';
+}
+.not_item > span{
+        padding: .133333rem 0;
+        float: right;
+        font-size:14px; 
+}
+.not_text{
+    font-size: 16px;
+}
+
+/*forum*/
+.content_user{
+    float: left;
+    width: 70%;
+    padding: .266667rem 0;
+}
+.content_user img{
+    height: 1.28rem;
+    padding-right: .533333rem;
+    vertical-align:middle;
+}
+.content_user span{
+    font-size: 14px;
+    vertical-align:middle;
+}
+/*edit*/
+.Input{
+    width: 8.986667rem;
+    border: 0;
+    min-height: .533333rem;
+    font-family: "微软雅黑";
+    line-height: 1.4;
+    font-size: 20px;
+    resize: none;
+    padding: .506667rem;
+    overflow: auto;
+}
+.content_Input{
+    width: 8.986667rem;
+    border: 0;
+    font-family: "微软雅黑";
+    line-height: 1.4;
+    font-size: 20px;
+    resize: none;
+    padding: .506667rem;
+    overflow: auto;
+}
+/**/
+.Profile_Main{
+    padding:0 .32rem;
+    padding-bottom :.48rem; 
+    position: relative;
+}
+.Profile_Main::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 0.32rem;
+    display: block;
+    border-bottom: .026667rem solid rgb(244,244,248);;
+    content: '';
+}
+.content_title{
+    position: relative;
+    width: 100%;
+}
+.content_title > span{
+    position: absolute;
+    right: .32rem;
+    top: .08rem;
+}
+.content_body{ 
+    font-size: 14px;
+    
+}
+.content_body img{ 
+    width: 100%;
+}
+
+.answer{
+    padding:.346667rem .32rem;
+    position: relative;
+    
+}
+.answer::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 0.32rem;
+    display: block;
+    border-bottom: .053333rem solid rgb(237,237,237);;
+    content: '';
+}
+.answer span{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: rgb(174,174,174);
+}
+.answer img{
+    height: 1.066667rem;
+}
